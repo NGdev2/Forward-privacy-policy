@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forward – Privacy Policy & Terms</title>
+  <meta name="description" content="Privacy Policy and Terms of Use for Forward, an endless-road RPG runner for Android.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --night:  #0d1024;
+      --deep:   #151a36;
+      --gold:   #f2c14e;
+      --ember:  #d98a2b;
+      --muted:  #5b6275;
+      --light:  #fdf6e3;
+      --bg:     #f8f7f3;
+      --white:  #ffffff;
+      --border: #e6e1d3;
+      --text:   #2b2f3a;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(180deg, var(--night), var(--deep));
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 12px rgba(13, 16, 36, 0.25);
+    }
+
+    .brand { display: flex; align-items: baseline; gap: 10px; }
+
+    .brand-name {
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      background: linear-gradient(180deg, #fff3cf, var(--gold) 55%, var(--ember));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1;
+    }
+
+    .brand-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #aab0c8;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .tab-group { display: flex; gap: 6px; }
+
+    .tab-btn {
+      padding: 7px 20px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid rgba(242, 193, 78, 0.35);
+      background: transparent;
+      color: #d6d9e6;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .tab-btn.active { background: var(--gold); border-color: var(--gold); color: var(--night); }
+    .tab-btn:hover:not(.active) { border-color: var(--gold); color: var(--white); }
+
+    /* ── Main content ── */
+    main { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .section { display: none; }
+    .section.active { display: block; }
+
+    h1 { font-size: 28px; font-weight: 700; color: var(--night); margin-bottom: 6px; }
+
+    .effective-date { font-size: 12px; color: var(--muted); letter-spacing: 0.5px; margin-bottom: 32px; }
+
+    .intro {
+      background: var(--light);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin-bottom: 36px;
+      font-size: 15px;
+      color: var(--night);
+      line-height: 1.65;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--ember);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    p { margin-bottom: 12px; font-size: 15px; color: var(--text); }
+    ul { margin: 0 0 12px 0; padding-left: 20px; }
+    li { font-size: 15px; color: var(--text); margin-bottom: 6px; }
+    strong { color: var(--night); }
+    a { color: #b56d12; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    .tag {
+      display: inline-block;
+      background: var(--light);
+      color: var(--night);
+      border: 1px solid #efdca8;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .contact-block {
+      background: linear-gradient(160deg, var(--night), var(--deep));
+      color: var(--white);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 40px;
+    }
+    .contact-block h2 { color: var(--gold); margin-top: 0; }
+    .contact-block p { color: #cbd0e0; }
+    .contact-block a { color: var(--gold); }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <span class="brand-name">FORWARD</span>
+      <span class="brand-label">Legal</span>
+    </div>
+    <div class="tab-group">
+      <button class="tab-btn active" data-tab="privacy">Privacy Policy</button>
+      <button class="tab-btn" data-tab="terms">Terms of Use</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════════
+         PRIVACY POLICY
+    ════════════════════════════════════════ -->
+    <div id="privacy" class="section active">
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective date: 2026-09-28 &nbsp;·&nbsp; Last updated: 2026-09-28</p>
+
+      <div class="intro">
+        Forward is an offline RPG runner. There is no account and the game does not send your progress anywhere.
+        The only data processing comes from the optional rewarded ads, which you choose to watch. This policy explains it honestly.
+      </div>
+
+      <h2>1. Information We Collect</h2>
+
+      <p><span class="tag">LOCAL</span> <strong>Game progress and settings</strong></p>
+      <p>Your hero's level, items, statistics and settings (language, volume, and similar) are saved only on your device, in the app's private storage. They are never uploaded to our servers — Forward has no servers. Uninstalling the game deletes this data.</p>
+
+      <p><span class="tag">ADS</span> <strong>Advertising data (Google AdMob)</strong></p>
+      <p>Forward shows rewarded ads only when you tap a "Watch an ad" button (for example to double a reward, get back up after a defeat, or earn gems). To request and show these ads, the Google Mobile Ads SDK may collect and process:</p>
+      <ul>
+        <li>Your device's advertising ID</li>
+        <li>Your IP address and an approximate location derived from it</li>
+        <li>Device and app information (device model, operating system and app version)</li>
+        <li>Ad interaction data (for example, whether an ad was shown or watched to the end) and diagnostics</li>
+      </ul>
+      <p>This data is collected by Google, not by the developer. The developer only sees aggregated, anonymous reports (such as the number of ads shown).</p>
+
+      <div class="highlight-box">
+        <p>No account, no sign-in, no analytics and no crash reporting. The developer never receives your name, email or any content from your device.</p>
+      </div>
+
+      <h2>2. How Information Is Used</h2>
+      <ul>
+        <li>To save your progress on your device so you can continue playing</li>
+        <li>To show the rewarded ads you choose to watch, measure them, and prevent ad fraud (by Google)</li>
+        <li>To give you the in-game reward after an ad is watched</li>
+      </ul>
+      <p>We do not sell personal data, and we do not share any data with third parties other than Google AdMob as described here.</p>
+
+      <h2>3. Your Choices and Consent</h2>
+      <p>If you are in the European Economic Area, the United Kingdom or Switzerland, or in a US state with applicable privacy laws, Forward shows Google's consent form before any ad is requested. You can accept, refuse, or choose which purposes you allow.</p>
+      <p>You can change your choice at any time in the game: <strong>Settings → Privacy &amp; ads</strong>. If you refuse, AdMob may still show limited, non-personalised ads where the law allows it.</p>
+      <p>You can also reset your advertising ID or opt out of personalised ads in your Android settings (<strong>Settings → Privacy → Ads</strong>, depending on your device).</p>
+
+      <h2>4. Third-Party Services</h2>
+      <p>Forward uses the following third-party service, governed by Google's policies:</p>
+      <ul>
+        <li><strong>Google AdMob</strong> (Google Mobile Ads SDK and User Messaging Platform) — rewarded ads and the consent form. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>.</li>
+      </ul>
+      <p>No other analytics SDKs, advertising networks or trackers are included in the app.</p>
+
+      <h2>5. Permissions</h2>
+      <ul>
+        <li><strong>Internet</strong> — needed to load ads. The rest of the game works offline.</li>
+        <li><strong>Advertising ID</strong> — used by the Google Mobile Ads SDK as described above.</li>
+      </ul>
+
+      <h2>6. Data Retention and Deletion</h2>
+      <p>Your game progress stays on your device until you reset it (Settings → Reset progress) or uninstall the game. The developer holds no data about you, so there is nothing to request or delete on our side. Data processed by Google for ads is retained according to Google's policies.</p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>Forward is not directed at children under the age of 13, and its ads are configured for a teen audience. We do not knowingly collect personal data from children. If you believe a child's data has been processed through the app, please contact us.</p>
+
+      <h2>8. Purchases</h2>
+      <p>Forward currently has no in-app purchases. If they are added in the future, this policy will be updated before they are released.</p>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy as the game evolves. We will update the "Last updated" date at the top of this page. Continued use of the game after changes are posted means you accept the updated policy.</p>
+
+      <div class="contact-block">
+        <h2>10. Contact</h2>
+        <p>If you have any questions about this Privacy Policy, please contact:</p>
+        <p><strong style="color:#fff">Aidar</strong> — solo developer of Forward<br>
+        <a href="mailto:aidar.devlab42@gmail.com">aidar.devlab42@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         TERMS OF USE
+    ════════════════════════════════════════ -->
+    <div id="terms" class="section">
+      <h1>Terms of Use</h1>
+      <p class="effective-date">Effective date: 2026-09-28 &nbsp;·&nbsp; Last updated: 2026-09-28</p>
+
+      <div class="intro">
+        By downloading or playing Forward, you agree to these terms. Please read them carefully.
+      </div>
+
+      <h2>1. About the Game</h2>
+      <p>Forward is an endless-road RPG runner developed by Aidar (the "Developer"). You guide a hero down an endless road, choose between encounters, fight turn-based battles, collect equipment and face bosses.</p>
+
+      <h2>2. License</h2>
+      <p>The Developer grants you a personal, non-exclusive, non-transferable license to download and play Forward on devices you own or control, for your own non-commercial entertainment.</p>
+
+      <h2>3. Virtual Items and Currency</h2>
+      <p>The game contains virtual items and currencies (such as gold, gems, equipment and consumables). They have no real-world monetary value, cannot be exchanged for money, and exist only inside the game. The Developer may rebalance or change them as the game evolves.</p>
+      <p>Your progress is stored only on your device. It may be lost if you clear the app's data, reset progress or uninstall the game; the Developer cannot restore it.</p>
+
+      <h2>4. Advertising</h2>
+      <p>Forward offers optional rewarded ads provided by Google AdMob. Watching an ad is always your choice. A reward is granted only when the ad is watched to the end; availability of ads is not guaranteed.</p>
+
+      <h2>5. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use cheats, automation or modified versions of the app to obtain rewards, including ad rewards</li>
+        <li>Interfere with or manipulate the ads shown in the app (for example, generating invalid ad traffic)</li>
+        <li>Reverse-engineer or redistribute the app, except as permitted by applicable law</li>
+        <li>Use the game in any way that violates applicable laws or regulations</li>
+      </ul>
+
+      <h2>6. In-App Purchases</h2>
+      <p>Forward currently has no in-app purchases. If they are introduced, they will be processed through Google Play according to its terms, and purchases will be non-refundable except as required by applicable law or platform policy.</p>
+
+      <h2>7. No Warranties</h2>
+      <p>Forward is provided "as is" without warranties of any kind. The Developer does not guarantee that the game will be available at all times, error-free, or suitable for any particular purpose.</p>
+      <p>To the extent permitted by law, the Developer is not liable for any loss of game progress or damages arising from your use or inability to use the game.</p>
+
+      <h2>8. Termination</h2>
+      <p>You may stop playing and uninstall the game at any time. The Developer may discontinue the game or its features at any time.</p>
+
+      <h2>9. Changes to These Terms</h2>
+      <p>We may update these Terms as the game evolves. Continued use of the game after changes are posted constitutes acceptance of the updated Terms.</p>
+
+      <div class="contact-block">
+        <h2>10. Contact</h2>
+        <p>For any questions about these Terms of Use:</p>
+        <p><strong style="color:#fff">Aidar</strong> — solo developer of Forward<br>
+        <a href="mailto:aidar.devlab42@gmail.com">aidar.devlab42@gmail.com</a></p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Forward by Aidar. All rights reserved.
+  </footer>
+
+  <script>
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const sections = document.querySelectorAll('.section');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        tabBtns.forEach(b => b.classList.toggle('active', b === btn));
+        sections.forEach(s => s.classList.toggle('active', s.id === target));
+        window.history.replaceState(null, '', '#' + target);
+      });
+    });
+
+    // Direct link support
+    const hash = window.location.hash.slice(1);
+    if (hash === 'terms') {
+      document.querySelector('[data-tab="terms"]').click();
+    }
+  </script>
+
+</body>
+</html>
